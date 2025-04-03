@@ -41,7 +41,18 @@ Este é um site pessoal moderno e responsivo que você pode usar para mostrar su
    ```
 4. Vá para as configurações do seu repositório no GitHub
 5. Na seção "Pages", selecione a branch "main" como fonte
-6. Seu site estará disponível em `https://seu-usuario.github.io/nome-do-repositorio`
+6. Seu site estará disponível em `https://vteze.space`
+
+## Domínio Personalizado
+
+Este site está configurado para usar o domínio personalizado `vteze.space`. Para configurar seu próprio domínio:
+
+1. Compre um domínio em um registrador de domínios
+2. Configure os registros DNS:
+   - Adicione registros A apontando para os IPs do GitHub Pages
+   - Adicione um registro CNAME para o subdomínio www
+3. Crie um arquivo CNAME na raiz do projeto com seu domínio
+4. Configure o domínio nas configurações do GitHub Pages
 
 ## Tecnologias Utilizadas
 

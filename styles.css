@@ -215,7 +215,7 @@ h2::after {
     transition: var(--transition);
 }
 
-.social-card:hover i {
+social-card:hover i {
     transform: scale(1.2);
 }
 
@@ -359,4 +359,74 @@ body.light-mode .theme-toggle i.fa-sun {
 
 .theme-toggle i.fa-moon {
     display: inline-block;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    text-decoration: none; /* Remove a linha de baixo do link */
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-btn i {
+    font-size: 2.2rem;
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+}
+
+.whatsapp-btn:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.light-mode .whatsapp-tooltip {
+    background-color: var(--light-card-bg);
+    color: var(--light-text-color);
+    border-color: var(--light-card-border);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-btn i {
+        font-size: 1.8rem;
+    }
 }

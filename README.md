@@ -1,66 +1,72 @@
-# Meu Site Pessoal
+# My Personal Website
 
-Este é um site pessoal moderno e responsivo que você pode usar para mostrar suas redes sociais e projetos.
+A modern, responsive personal website to showcase your social networks, skills, work experience and projects.
 
-## Características
+## Features
 
-- Design moderno e limpo
-- Totalmente responsivo (funciona em dispositivos móveis e desktop)
-- Animações suaves
-- Seção de perfil com foto
-- Links para redes sociais
-- Seção de projetos
-- Fácil de personalizar
+- Modern, clean design
+- Fully responsive (works on mobile and desktop devices)
+- Light/dark mode toggle
+- Smooth animations
+- Profile section with photo
+- Social media links
+- Professional experience timeline
+- Skills & technologies section
+- GitHub repositories integration
+- Current learning progress
+- Contact form
+- WhatsApp integration
+- Navigation menu
 
-## Como Personalizar
+## How to Customize
 
-1. Edite o arquivo `index.html`:
+1. Edit the `index.html` file:
 
-   - Substitua "Seu Nome" pelo seu nome
-   - Atualize a descrição na classe "bio"
-   - Substitua a URL da imagem de perfil
-   - Atualize os links das redes sociais com suas URLs
-   - Adicione seus próprios projetos
+   - Replace profile information with your own
+   - Update the bio description
+   - Update your profile image
+   - Update social media links with your URLs
+   - Add your own projects and experience
 
-2. Personalize as cores no arquivo `styles.css`:
-   - Edite as variáveis CSS no início do arquivo para mudar as cores do site
+2. Customize colors in the `styles.css` file:
+   - Edit the CSS variables at the beginning of the file to change the website's color scheme
 
-## Como Hospedar no GitHub
+## How to Host on GitHub
 
-1. Crie um novo repositório no GitHub
-2. Inicialize o Git no seu projeto local:
+1. Create a new repository on GitHub
+2. Initialize Git in your local project:
    ```bash
    git init
    git add .
-   git commit -m "Primeiro commit"
+   git commit -m "First commit"
    ```
-3. Conecte seu repositório local ao GitHub:
+3. Connect your local repository to GitHub:
    ```bash
-   git remote add origin URL_DO_SEU_REPOSITORIO
+   git remote add origin YOUR_REPOSITORY_URL
    git push -u origin main
    ```
-4. Vá para as configurações do seu repositório no GitHub
-5. Na seção "Pages", selecione a branch "main" como fonte
-6. Seu site estará disponível em `https://vteze.space`
+4. Go to your repository settings on GitHub
+5. In the "Pages" section, select the "main" branch as the source
+6. Your website will be available at `https://vteze.space`
 
-## Domínio Personalizado
+## Custom Domain
 
-Este site está configurado para usar o domínio personalizado `vteze.space`. Para configurar seu próprio domínio:
+This website is configured to use the custom domain `vteze.space`. To set up your own domain:
 
-1. Compre um domínio em um registrador de domínios
-2. Configure os registros DNS:
-   - Adicione registros A apontando para os IPs do GitHub Pages
-   - Adicione um registro CNAME para o subdomínio www
-3. Crie um arquivo CNAME na raiz do projeto com seu domínio
-4. Configure o domínio nas configurações do GitHub Pages
+1. Purchase a domain from a domain registrar
+2. Configure DNS records:
+   - Add A records pointing to GitHub Pages IPs
+   - Add a CNAME record for the www subdomain
+3. Create a CNAME file in the project root with your domain
+4. Configure the domain in GitHub Pages settings
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Font Awesome (para ícones)
+- Font Awesome (for icons)
 
-## Licença
+## License
 
-Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar conforme suas necessidades.
+This project is under the MIT license. Feel free to use and modify it according to your needs.

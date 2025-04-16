@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Cruz | Empreendedor</title>
+    <title>Victor Cruz | Developer & Entrepreneur</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/websiteIcon.png">
@@ -21,20 +21,39 @@
 </head>
 
 <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#"><span>Victor</span>Cruz</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#social-links" class="nav-link">Connect</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#timeline" class="nav-link">Experience</a></li>
+                <li><a href="#contact-form" class="nav-link">Contact</a></li>
+                <li><a href="#github-repos" class="nav-link">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="header">
+        <header class="header" id="home">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="./images/fotoPerfil.jpg" alt="Foto de Perfil">
+                    <img src="./images/fotoPerfil.jpg" alt="Profile Photo">
                 </div>
                 <h1>Victor Cruz</h1>
-                <p class="bio">Desenvolvedor Full Stack | Empreendedor | Investidor</p>
+                <p class="bio">Full Stack Developer | Entrepreneur | Investor</p>
             </div>
         </header>
 
         <main class="main-content">
-            <section class="social-links">
-                <h2>Conecte-se Comigo</h2>
+            <section class="social-links" id="social-links">
+                <h2>Connect With Me</h2>
                 <div class="links-grid">
                     <a href="https://github.com/vteze" class="social-card">
                         <i class="fab fa-github"></i>
@@ -64,33 +83,208 @@
                 </div>
             </section>
 
-            <section class="projects">
-                <h2>Projetos em Destaque</h2>
-                <div class="projects-grid">
-                    <a href="#" class="project-card">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1</p>
-                    </a>
-                    <a href="#" class="project-card">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2</p>
-                    </a>
-                    <a href="#" class="project-card">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição do projeto 3</p>
-                    </a>
+            <section class="skills" id="skills">
+                <h2>Technologies & Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-gitlab"></i>
+                        <span>GitLab CI/CD</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>PCF</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <span>Containers</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Grafana</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-search"></i>
+                        <span>Splunk</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Monitoring</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>DevOps</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>API Design</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>System Design</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tasks"></i>
+                        <span>CI/CD</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SRE</span>
+                    </div>
                 </div>
             </section>
+
+            <section class="timeline" id="timeline">
+                <h2>Professional Experience</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">August 2021 - May 2025</div>
+                            <h3>Dell Technologies</h3>
+                            <p class="timeline-role">DevOps Engineer (Feb 2024 - May 2025)</p>
+                            <p>I actively contributed to a DevOps team working with cutting-edge technologies such as Containers on Bare Metal and Pivotal Cloud Foundry (PCF), in addition to managing GitLab pipeline automations. My responsibilities included automating processes using Python scripts to enhance the operational efficiency of CI/CD pipelines and ensuring development environments remained stable and reliable. These efforts supported over 50 million daily transactions through our internal systems. I was responsible for managing DevOps activities for 22 products across 8 product lines, maintaining close collaboration with a distributed team of over 285 professionals.</p>
+                            <p class="timeline-role">Python Developer & SRE Monitoring (August 2021 - Feb 2024)</p>
+                            <p>In my initial role, I focused on developing custom monitoring solutions for internal applications, covering all aspects required by the development teams. I created monitoring systems using Python scripts, database integrations, and observability tools such as Grafana and Splunk. The goal was to deliver a one-stop-shop for application monitoring by consolidating the best features from various tools into a single platform. I also collaborated closely with the L2 Support team to reduce the volume of critical incidents and ensure the health and stability of internal systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Removing the Featured Projects section -->
+            
+            <section class="contact-form" id="contact-form">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="formStatus" class="form-status"></div>
+            </section>
+
+            <section class="learning-now">
+                <h2>What I'm Learning</h2>
+                <div class="learning-container">
+                    <div class="learning-item">
+                        <div class="learning-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="learning-content">
+                            <h3>Artificial Intelligence</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                            <p>Deepening my knowledge in Machine Learning and Deep Learning with a focus on practical business applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="learning-item">
+                        <div class="learning-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="learning-content">
+                            <h3>Blockchain & Web3</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                            <p>Exploring smart contract development with Solidity and integration with front-end frameworks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="learning-item">
+                        <div class="learning-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="learning-content">
+                            <h3>AWS Cloud Architecture</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <p>Studying for advanced certifications in solutions architecture and DevOps on AWS.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="github-repos" id="github-repos">
+                <h2>My GitHub Repositories</h2>
+                <div class="repo-filters">
+                    <button class="repo-filter active" data-filter="all">All</button>
+                    <button class="repo-filter" data-filter="popular">Popular</button>
+                    <button class="repo-filter" data-filter="recent">Recent</button>
+                </div>
+                <div class="repos-container">
+                    <!-- Repositories will be loaded dynamically via JavaScript -->
+                    <div class="repos-loading">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <p>Loading repositories...</p>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
-            <p>&copy; 2024 Victor Cruz. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Victor Cruz. All rights reserved.</p>
         </footer>
     </div>
-    <!-- Botão flutuante do WhatsApp -->
+    <!-- WhatsApp floating button -->
     <a href="https://wa.me/5551999097797" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">Fale comigo</span>
+        <span class="whatsapp-tooltip">Chat with me</span>
     </a>
     <script src="script.js"></script>
 </body>

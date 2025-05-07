@@ -882,7 +882,7 @@ body.light-mode .no-repos {
 /* Botão de tema */
 .theme-toggle {
     position: fixed;
-    top: 20px;
+    top: calc(var(--nav-height) / 2 - 20px);
     right: 20px;
     width: 40px;
     height: 40px;
@@ -894,9 +894,13 @@ body.light-mode .no-repos {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001;
     transition: var(--transition);
     backdrop-filter: blur(10px);
+}
+
+.main-nav.scrolled .theme-toggle {
+    top: 10px;
 }
 
 .theme-toggle:hover {
@@ -1148,6 +1152,15 @@ body.light-mode .nav-toggle {
     
     body.light-mode .nav-links {
         background-color: rgba(240, 243, 248, 0.98);
+    }
+
+    .theme-toggle {
+        top: calc(var(--nav-height) / 2 - 20px);
+        right: 70px;
+    }
+    
+    .main-nav.scrolled .theme-toggle {
+        top: 10px;
     }
 }
 
